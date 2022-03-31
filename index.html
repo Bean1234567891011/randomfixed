@@ -7,7 +7,8 @@
 	</head>
 	 <body>
   		<div id = "home">
-			
+			<h1>Randomizer App</h1>
+			<center><button class="twentyPlay" onClick="twenty()"><a href="#" onClick="play()"><p class="twenty">1-20 Randomizer</p></a></button></center>
 		</div>
 		<div id = "coin">
 			
@@ -20,12 +21,19 @@
 		</div>
 		 
 		 <script>
-			 
+			 function twenty() {
+                		document.getElementById("home).style.display = "none";
+                		document.getElementById("twenty").style.display = "block";
+           		 } 
 		 </script>
 		 
 		 <style>
 			 body {
 				 background-color: #26bf4f;
+			 }
+			 
+			 h1 {
+				 color: ffffff;
 			 }
 			 
 			 #coin, #dice, #twenty {
