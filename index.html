@@ -6,7 +6,7 @@
 		<title>Randomizer</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 	</head>
-	 <body>
+	 <body id = "centered">
   		<div id = "home">
 			<h1>Randomizer App</h1>
 			<button class="twentyPlay" onClick="twenty()">1-20 Number Randomizer</button>
@@ -75,6 +75,14 @@
 				 font-family: 'Open Sans', sans-serif;
 				 transition:all 1s;
 				 outline:none;
+			 }
+			 
+			 #centered {
+  				 margin: 0;
+  				 position: absolute;
+  				 top: 50%;
+  				 left: 50%;
+  				 transform: translate(-50%, -50%);
 			 }
 		 </style>
         </body>
