@@ -17,13 +17,18 @@
 			
 		</div>
 		<div id = "twenty">
-			
+			<center><button class="twentyHome" onClick="twentyHome()"><a href="#" onClick="play()"><p class="twenty">Home</p></a></button></center>
 		</div>
 		 
 		 <script>
 			 function twenty() {
                 		document.getElementById("home").style.display = "none";
                 		document.getElementById("twenty").style.display = "block";
+           		 } 
+			 
+			 function twentyHome() {
+                		document.getElementById("twenty").style.display = "none";
+                		document.getElementById("home").style.display = "block";
            		 } 
 		 </script>
 		 
