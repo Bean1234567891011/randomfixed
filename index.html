@@ -17,6 +17,8 @@
 			
 		</div>
 		<div id = "twenty">
+			<p id = "demo"></p>
+			<center><button class="twentyPlay" onClick="twentyRandom()"><a href="#" onClick="play()"><p class="twenty">Click For Number</p></a></button></center>
 			<center><button class="twentyPlay" onClick="twentyHome()"><a href="#" onClick="play()"><p class="twenty">Home</p></a></button></center>
 		</div>
 		 
@@ -30,6 +32,11 @@
                 		document.getElementById("twenty").style.display = "none";
                 		document.getElementById("home").style.display = "block";
            		 } 
+			 
+			 function twentyRandom() {
+				document.getElementById("demo").innerHTML =
+				Math.floor(Math.random() * 101);
+			 }
 		 </script>
 		 
 		 <style>
