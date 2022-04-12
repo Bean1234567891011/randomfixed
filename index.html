@@ -10,12 +10,17 @@
   		<div id = "home">
 			<h1>Randomizer App</h1>
 			<button class="twentyPlay" onClick="twenty()">1-20 Number Randomizer</button>
+			<br>
+			<button class "twentyPlay">Dice roller</button>
 		</div>
 		<div id = "coin">
 			
 		</div>
 		<div id = "dice">
-			
+			<img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAADFCAMAAACM/tznAAAAY1BMVEX///8AAAB6enplZWUcHBwRERESEhINDQ0aGhqFhYW9vb1fX1+dnZ2BgYEfHx/Ly8s2Njbt7e2tra1oaGjy8vKVlZXMzMynp6dQUFAmJiaMjIxwcHCwsLCbm5swMDC2trZHR0fNxIuVAAACiElEQVR4nO2ci04CMRBFWwGLiws+eCiI+v9fKT5ojFA0w8a7k54DKtnI3OzJ1FkwJQQAAAAAAAAAAAAAAAAAAAA4RRNTuhyduo8u0+7n7qv4/eTT/3JPsZEJmMReMJEJGMTUXohpUxwIBUxl2ZmpVMBYlp0ZSgUMZdkZBCAAAbJsBCAAAbLsDAIQgABZNgIQgABZdgYBCECALBsBCECALDuDAAQgQJaNAAQgQJadGdcuoPoOQAACECDL7oUApgACECDLRgACeiCAKYAABMiyEYCAHghgCiDAr4D5crXdrmbzs4r4FdA87Ld9PZyz8c2rgOXj951vj0tzIacC1j83/62tlXxOgc3h9seNsZTLDrg6tgH0ylbLo4DZ8S2wM1MxjwLScQHJVMyhgKfSLugnSzWHAm5KAm4s1fxNgdvS+cd4ayjnrwOasgDLFaE/AddlAdeGcloBlu3zRy8CPrFcCvjrgOoFnFgCW0M57RSwLIHq/whWPwbDc+n8ny3V/E2BcFcScGep5rADQkmAqZhHAZ2+HPb3WiAULgVaWy2PHRDC/eH53xtL+RRw2APGN8TUAuwfpbUcfz/9sW39v+O0A3a8vO5P//XljDJ+BYQwn60Wi3P/NeZyCnSJ5w7oBAQ4nQKdQQfULoApgIDKBfh7U7Rjqu+A6gUwBRCAAFk2U4AOQIAsO4MABFQ+BbgSREDlAlgCCGAKyLLpAAQgQJadQQBTgA6QZSOgD0uADkBA5UuAKYAABMiyEYCAHghgCiAAAbLsQZzKsjNTqYDUXohpk1DApLQH9n+ZyAQ0MY3eb1/3/eOP2+fjtD+eCsdLv5+P//q8ZPrUAQAAAAAAAAAAAAAAAAAAgJp4A4YiGgt245FrAAAAAElFTkSuQmCC" />
+			<button class="twentyPlay" onClick="twentyRandom()">Click to Roll</button>
+			<br>
+			<button class="twentyPlay" onClick="twentyHome()">Home</button>
 		</div>
 		<div id = "twenty">
 			<h1 id = "demo">10</h1>
@@ -25,13 +30,21 @@
 		</div>
 		 
 		 <script>
+			 "use strict";
 			 function twenty() {
                 		document.getElementById("home").style.display = "none";
                 		document.getElementById("twenty").style.display = "block";
            		 } 
+			
+			 function dice () {
+                		document.getElementById("home").style.display = "none";
+                		document.getElementById("dice").style.display = "block";
+           		 } 
 			 
 			 function twentyHome() {
                 		document.getElementById("twenty").style.display = "none";
+				document.getElementById("dice").style.display = "none";
+				document.getElementById("coin").style.display = "none";
                 		document.getElementById("home").style.display = "block";
            		 } 
 			 
